@@ -1,0 +1,50 @@
+body
+{
+  background-color: rgb(64, 5, 255);
+  color: whitesmoke;
+}
+
+span
+{
+  font-size: 30px;
+}
+
+#camera , #result
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+}
+
+#result_emotion_name ,#result_emotion_name2  
+{
+  color: black;
+}
+
+.emotion_name
+{
+  font-size: 40px;
+}
+
+.emoji
+{
+  font-size:48px;
+}
+
+.heading {
+  font-size: 18px;
+  border-radius: 10px;
+  letter-spacing: 10px;
+}
+
+.copy_right_footer {
+  color: #6c757d;
+  bottom: 0;
+  width: 100%;
+  font-size: 20px;
+  background-color: white;
+  line-height: 3;
+  text-align: center;
+  text-shadow: 5px 5px 5px rgb(151, 149, 149);
+  background-color: rgb(81, 255, 0);
+}

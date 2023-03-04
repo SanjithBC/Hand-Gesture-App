@@ -1,0 +1,11 @@
+Hand gesture link and images
+______________________________
+
+Images:
+
+Hand: &#9995;
+Pointing up: &#128070
+Pointing left: &#128072
+OK: &#128076
+Thumbs up: &#128077
+Clap: &#128079
