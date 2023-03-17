@@ -31,3 +31,38 @@ function speak() {
     var utterThis = new SpeechSynthesisUtterance(speak_data);
     synth.speak(utterThis);
 }
+
+function check() {
+    img = document.getElementById('captured_image');
+    classifier.classify(img, gotResult);
+}
+
+function gotResult(error, results) {
+    if (error) {
+        console.error(error);
+    } else {
+        console.log(results);
+        document.getElementById("result_gesture_name").innerHTML = results[0].label;
+        prediction = results[0].label;
+        speak();
+
+        if (results[0].label == "Hand") {
+            document.getElementById("update_gesture").innerHTML = "&#9995;";
+        }
+        if (results[0].label == "Pointing up") {
+            document.getElementById("update_gesture").innerHTML = "&#128070;";
+        }
+        if (results[0].label == "Pointing left") {
+            document.getElementById("update_gesture").innerHTML = "&#128072;";
+        }
+        if (results[0].label == "OK") {
+            document.getElementById("update_gesture").innerHTML = "&#128076;";
+        }
+        if (results[0].label == "Thumbs up") {
+            document.getElementById("update_gesture").innerHTML = "&#128077;";
+        }
+        if (results[0].label == "Clap") {
+            document.getElementById("update_gesture").innerHTML = "&#128079;";
+        }
+    }
+}
